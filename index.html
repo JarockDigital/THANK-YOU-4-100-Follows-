@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAROCK DIGITAL | 100 Followers</title>
+  
+  <!-- Open Graph Meta Tags for Direct Sharing -->
+  <meta property="og:title" content="JAROCK DIGITAL | 100 Followers">
+  <meta property="og:description" content="100 people chose to follow before the big milestones. A quick thank you for being here this early.">
+  <meta property="og:image" content="milestone.jpg">
+  <meta property="og:url" content="https://jarock0216.github.io/">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --primary-color: #00ffcc; 
+      --bg-dark: #0f0f12;
+      --card-bg: #1a1a24;
+      --text-main: #ffffff;
+      --text-muted: #a0a0b8;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: system-ui, -apple-system, sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* --- HERO SECTION --- */
+    .hero-container {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 20px 40px 20px;
+    }
+
+    .hero-content {
+      max-width: 680px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 16px;
+      background: rgba(0, 255, 204, 0.1);
+      border: 1px solid var(--primary-color);
+      color: var(--primary-color);
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 24px;
+    }
+
+    .hero-content h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      margin: 0 0 20px 0;
+      line-height: 1.1;
+    }
+
+    .milestone-count {
+      color: var(--primary-color);
+      display: inline-block;
+      font-weight: 900;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--text-main);
+      margin: 0 0 24px 0;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .hero-thanks {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 32px;
+      line-height: 1.7;
+    }
+
+    /* --- PROOF SECTION --- */
+    .supporters-section {
+      padding: 20px 20px 60px 20px;
+      text-align: center;
+    }
+
+    .proof-wrapper {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+
+    .proof-img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      display: block;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+      padding: 12px;
+      background: var(--card-bg);
+      box-sizing: border-box;
+    }
+
+    .proof-placeholder {
+      display: none;
+      background: var(--card-bg);
+      border: 1px dashed rgba(255, 255, 255, 0.15);
+      padding: 40px 15px;
+      border-radius: 16px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .proof-img-missing .proof-img { display: none; }
+    .proof-img-missing .proof-placeholder { display: block; }
+
+    .proof-caption {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 14px;
+      font-style: italic;
+    }
+
+    /* --- WHAT'S NEXT --- */
+    .vision-section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .vision-header h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin: 0 0 16px 0;
+      text-align: center;
+    }
+
+    .vision-header p {
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin: 0 0 32px 0;
+      font-size: 1.05rem;
+    }
+
+    .bullet-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 40px 0;
+    }
+
+    .bullet-list li {
+      position: relative;
+      padding-left: 32px;
+      margin-bottom: 20px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    .bullet-list li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    .bullet-list strong {
+      color: var(--text-main);
+    }
+
+    /* --- CURRENT WORKSPACE (Clean Links) --- */
+    .work-section {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 20px 20px 60px 20px;
+    }
+
+    .work-section h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: var(--text-main);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .work-links-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .work-link-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 18px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+
+    .work-link-card:hover {
+      background: rgba(0, 255, 204, 0.02);
+      border-color: rgba(0, 255, 204, 0.2);
+    }
+
+    .work-link-card h4 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .arrow-icon {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    /* --- UNTIL THE NEXT MILESTONE --- */
+    .final-cta {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .cta-content {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .final-cta h2 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.5px;
+    }
+
+    .final-cta p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 14px 28px;
+      background-color: var(--primary-color);
+      color: #000000;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      background-color: #00ddb0;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 255, 204, 0.2);
+    }
+
+    /* --- FOOTER --- */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    /* --- CONFETTI CANVAS --- */
+    #confetti-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 { font-size: 2.3rem; }
+      .hero-subtitle { font-size: 1.1rem; }
+      .btn-primary { width: 100%; box-sizing: border-box; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. HERO SECTION -->
+  <header class="hero-container">
+    <div class="hero-content">
+      <div class="badge">Thought 001 // Milestone</div>
+      <h1><span id="counter" class="milestone-count">0</span> Followers. One Small Beginning.</h1>
+      <p class="hero-subtitle">100 people chose to follow JAROCK DIGITAL before the big milestones, before the clients, before everything comes together.</p>
+      <p class="hero-thanks">Every like, follow, share, and message helped push this idea forward. This started with a laptop, late nights, and a simple goal to create clean things I’m proud of. Thank you for being here this early.</p>
+    </div>
+  </header>
+
+  <!-- 2. VISUAL PROOF DECK (Keep it real) -->
+  <section class="supporters-section">
+    <div class="proof-wrapper" id="proof-container">
+      <img src="milestone.jpg" alt="100 Followers Instagram Snapshot" class="proof-img" onerror="document.getElementById('proof-container').classList.add('proof-img-missing')">
+      <div class="proof-placeholder">
+        📸 [ Insert 100 Followers Instagram Screenshot Here ]
+      </div>
+      <div class="proof-caption">The First 100 People Who Believed.</div>
+    </div>
+  </section>
+
+  <!-- 3. WHAT'S NEXT -->
+  <section class="vision-section">
+    <div class="vision-header">
+      <h2>What’s Next?</h2>
+      <p>This is only the first milestone. The goal isn’t just to build websites—it’s to keep tracking the process while proving what can happen when you stay consistent. Here is what I'm keeping my head down on right now:</p>
+    </div>
+    
+    <ul class="bullet-list">
+      <li><strong>More open builds:</strong> Designing and deploying real concept previews out in the open to keep sharpening my eye.</li>
+      <li><strong>Staying custom:</strong> Keeping the code raw and avoiding bloated shortcuts to make sure every project layout is built right.</li>
+      <li><strong>Documenting the path:</strong> Keeping the updates honest, whether things go smoothly or break behind the scenes.</li>
+    </ul>
+  </section>
+
+  <!-- 4. CURRENT WORKSPACE -->
+  <section class="work-section">
+    <h3>Live Previews In Progress</h3>
+    <div class="work-links-grid">
+      <a href="https://jarock0216.github.io/SmashNDashPreview/" target="_blank" class="work-link-card">
+        <h4>Smash N Dash Concept</h4>
+        <span class="arrow-icon">↗</span>
+      </a>
+
+      <a href="https://jarock0216.github.io/MiamiBakedPreview/" target="_blank" class="work-link-card">
+        <h4>Miami Baked Concept</h4>
+        <span class="arrow-icon">↗</span>
+      </a>
+
+      <a href="https://jarock0216.github.io/Kabre-s-Kitchen/" target="_blank" class="work-link-card">
+        <h4>Kabre's Kitchen Build</h4>
+        <span class="arrow-icon">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- 5. UNTIL THE NEXT MILESTONE -->
+  <section class="final-cta">
+    <div class="cta-content">
+      <h2>Until The Next Milestone.</h2>
+      <p>The next chapter starts now. I’m heading back into the text editor to keep building things piece by piece. Thanks for rolling with me from day one.</p>
+      <a href="https://instagram.com/jarock_digital" target="_blank" class="btn-primary">Back to the Workspace →</a>
+    </div>
+  </section>
+
+  <!-- 6. FOOTER -->
+  <footer>
+    <p>© 2026 JAROCK DIGITAL. Hand-coded piece by piece.</p>
+  </footer>
+
+  <!-- Celebration Element -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- 7. COUNTER & CONFETTI ENGINE -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const counterEl = document.getElementById('counter');
+      const canvas = document.getElementById('confetti-canvas');
+      const ctx = canvas.getContext('2d');
+      
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      
+      window.addEventListener('resize', () => {
+        if (canvas) {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        }
+      });
+      
+      let particles = [];
+      const colors = ['#00ffcc', '#ffffff', '#ff007f', '#ffb703'];
+
+      class Confetti {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height - canvas.height;
+          this.size = Math.random() * 6 + 4;
+          this.color = colors[Math.floor(Math.random() * colors.length)];
+          this.speedY = Math.random() * 3 + 2;
+          this.speedX = Math.random() * 2 - 1;
+        }
+        update() {
+          this.y += this.speedY;
+          this.x += this.speedX;
+        }
+        draw() {
+          ctx.fillStyle = this.color;
+          ctx.fillRect(this.x, this.y, this.size, this.size);
+        }
+      }
+
+      function startConfetti() {
+        for (let i = 0; i < 60; i++) {
+          particles.push(new Confetti());
+        }
+        animateConfetti();
+      }
+
+      function animateConfetti() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach((p, idx) => {
+          p.update();
+          p.draw();
+          if (p.y > canvas.height) particles.splice(idx, 1);
+        });
+        if (particles.length > 0) {
+          requestAnimationFrame(animateConfetti);
+        } else {
+          canvas.remove();
+        }
+      }
+
+      // --- COUNTER ---
+      let start = null;
+      const duration = 1200; 
+      const targetCount = 100;
+
+      function countUp(timestamp) {
+        if (!start) start = timestamp;
+        const progress = Math.min((timestamp - start) / duration, 1);
+        
+        counterEl.textContent = Math.floor(progress * targetCount);
+        
+        if (progress < 1) {
+          requestAnimationFrame(countUp);
+        } else {
+          counterEl.textContent = targetCount;
+          counterEl.style.textShadow = '0 0 20px rgba(0, 255, 204, 0.5)';
+          startConfetti();
+        }
+      }
+
+      requestAnimationFrame(countUp);
+    });
+  </script>
+</body>
+</html>
