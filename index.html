@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarock Digital — The Founding 100</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- High-performance tactile confetti physics CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <!-- Tactile Overlays (Faint Concrete Grain & Structural Coordinates) -->
+    <div class="concrete-grain-overlay"></div>
+    <div class="chalk-datum-y" style="left: 10%;"></div>
+    <div class="chalk-datum-y" style="right: 15%;"></div>
+
+    <header class="site-header">
+        <span class="brand">JAROCK DIGITAL</span>
+        <span class="coord">PHASE 01 // FOUNDATION COMPLETE</span>
+    </header>
+
+    <main>
+        <!-- Section 1: The Entrance -->
+        <section class="intro-canvas">
+            <div class="rough-bracket"></div>
+            <div class="intro-title-wrap">
+                
+                <!-- Emotional Dedication (Revealed First) -->
+                <div class="emotional-dedication" id="emotionalDedication">
+                    To the first 100 people who believed in Jarock Digital.
+                </div>
+                
+                <!-- Monumental Title & Manifesto (Fades In) -->
+                <div class="monumental-title-container hidden" id="monumentalTitle">
+                    <h1 class="giant-title">THE<br>FOUNDING<br><span class="chalk-stroke">100</span></h1>
+                    <p class="manifesto">
+                        We do not build on templates. We build on foundations. Before the pillars were poured, 100 people stood on the raw earth. This is the structural survey of Jarock Digital.
+                    </p>
+                </div>
+
+            </div>
+            <div class="scroll-down-label" id="scrollLabel">SURVEY_THE_LOT ↓</div>
+        </section>
+
+        <!-- Section 2: Emotional Silence -->
+        <section class="silence-void">
+            <div class="silence-text">“Every building remembers its first brick.”</div>
+        </section>
+
+        <!-- Section 3: The Monolithic Structural Foundation -->
+        <section class="lot-map-section">
+            <div class="survey-header">
+                <h2>THE STRUCTURAL MAP</h2>
+                <div class="search-block">
+                    <input type="text" id="siteSearch" placeholder="LOCATE YOUR BRICK (ENTER HANDLE)..." autocomplete="off">
+                    <span class="active-chalk-bar"></span>
+                </div>
+            </div>
+
+            <!-- The Tactile Monolithic Grid -->
+            <div class="monolithic-grid-container">
+                <div class="monolithic-grid" id="monolithicGrid">
+                    <!-- 100 Structural blocks dynamically injected here -->
+                </div>
+            </div>
+
+            <!-- Foundation Phase Tracker -->
+            <div class="foundation-progress-footer">
+                <div class="progress-block">
+                    <span class="p-label">FOUNDATION STATUS:</span>
+                    <span class="p-val">100 / 100 STRUCTURAL MEMBERS [COMPLETE]</span>
+                </div>
+                <div class="progress-block">
+                    <span class="p-label">NEXT PHASE:</span>
+                    <span class="p-val" style="color: var(--survey-orange);">CLIENT_001 SETUP</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- The Unfolding Draft Drawer -->
+    <div class="drawer-shroud" id="drawerShroud">
+        <div class="dark-backdrop" onclick="resetLot()"></div>
+        
+        <!-- Interactive chalk string line connecting the block to the card -->
+        <div class="interactive-pull-string" id="pullString"></div>
+
+        <div class="unfolding-cabinet">
+            <div class="cabinet-header">
+                <span class="spec-num" id="specNum">MEMBER-000</span>
+                <button class="release-btn" onclick="resetLot()">[RELEASE_MEMBER]</button>
+            </div>
+
+            <!-- The Heavy Collectible Slab -->
+            <div class="collectible-slab" id="collectibleSlab">
+                <div class="slab-texture"></div>
+                <div class="slab-content">
+                    <div class="slab-header">
+                        <span>JAROCK DIGITAL // RECORD 2026</span>
+                        <span id="slabIndex">#000</span>
+                    </div>
+
+                    <div class="slab-body">
+                        <div class="plumb-bob-cross"></div>
+                        <h2 class="supporter-username" id="supporterUsername">@USER</h2>
+                        <p class="slab-role" id="supporterRole">FOUNDATIONAL PIECE</p>
+                    </div>
+
+                    <div class="slab-footer">
+                        <div class="stamp-chamber">
+                            <div class="heavy-stamp" id="heavyStamp">APPROVED</div>
+                        </div>
+                        <div class="technical-stats">
+                            <div class="stat-line"><span>BUILDER:</span><strong>J. CLARK</strong></div>
+                            <div class="stat-line"><span>METHOD:</span><strong>100% HAND-CODED</strong></div>
+                            <div class="stat-line"><span>SITE:</span><strong>GREENSBORO, NC</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p class="artifact-label">SCREENSHOT TO PRESERVE THIS ARTIFACT</p>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <span>JAROCK DIGITAL © 2026</span>
+        <span>LAY THE GROUNDWORK.</span>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
